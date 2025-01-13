@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- by default position static on webpage -->
+
+    <!-- relative position we can move anywhere without absolute position for parent div -->
+
+
+    <!-- sticky always working for super parent only -->
+
+
+
+
+<style>
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+    h5 {
+            position: relative;
+            color: coral;
+            font-weight: bold;
+            top: 10px;
+        }
+
+        nav {
+
+            position: sticky;
+            top: 0px;
+        }
+
+        nav .parent {
+
+            display: flex;
+            padding: 20px;
+            background-color: black;
+
+
+        }
+
+        .parent > li {
+            padding: 20px;
+            list-style:none;
+            color: white;
+            line-height: 5px;
+            position: relative;
+            left: 45pc;
+
+        }
+
+
+        li > a{
+            text-decoration: none;
+            color:white;
+        }
+
+        .parent>li:hover {
+            color: white;
+            box-shadow: 2px 2px 2px 2px rgb(0, 0, 180);
+        }
+
+        .section {
+            
+            display: flex;
+            justify-content: space-between;
+            padding: 5pc;
+
+        }
+
+        .section img {
+            border-radius: 25px;
+        }
+
+        section i{
+            padding:6px;
+        }
+
+        section > p{
+            color:black;
+        }
+
+
+        .section2 {
+            display: flex;
+            background-color: black;
+            padding-bottom:5px;
+        }
+
+        .section2 img{
+
+            background-color:white;
+            border-radius:1px;
+            margin-right: 3px;
+        }
+
+        .container1 {
+            padding: 2pc;
+        }
+
+        .container1 h6 {
+            text-align: center;
+            color:white;
+        }
+
+
+        .container1 p {
+            font-weight: 300;
+            color:white;
+            
+        }
+
+
+
+
+.container2 {
+            padding: 2pc;
+        }
+
+        .container2 h6 {
+            text-align: center;
+            color:white;
+        }
+
+
+        .container2 p {
+            font-weight: 300;
+            color:white;
+            
+        }
+
+        
+
+
+        .container3 {
+            padding: 2pc;
+        }
+
+        .container3 h6 {
+            text-align: center;
+            color:white;
+        }
+
+
+        .container3 p {
+            font-weight: 300;
+            color:white;
+            
+        }
+
+
+.container1:hover
+{
+    background-color: blue;
+}
+
+
+.container1 p:hover
+{
+    font-weight: 500;
+}
+
+
+.container2:hover
+{
+    background-color: blue;
+}
+
+
+.container2 p:hover
+{
+    font-weight: 500;
+}
+
+
+.container3:hover
+{
+    background-color: blue;
+}
+
+
+.container3 p:hover
+{
+    font-weight: 500;
+}
+
+
+
+        
+        .name{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: blue;
+            font-weight: bold;
+        }
+
+
+    
+
+        
+        
+    .section3 {
+        display:flex;
+        justify-content: space-between;
+        background-color: black;
+    }
+
+
+    .section3 h6{
+        text-align: center;
+        
+    }
+
+    .section3 img{
+        margin-right:5px;
+    }
+
+    .section3 p{
+        padding:20px;
+        font-weight: 300;
+        color:white;
+        
+    }
+    .section3 h6{
+        color:white;
+        
+    
+    }
+
+   
+    .section3 img{
+        background-color: white;
+    }
+
+
+
+
+    .section3 .container4:hover{
+        background-color: blue;
+       
+    }
+
+    .section3 .container5:hover{
+        background-color: blue;
+       
+    }
+
+    .section3 .container6:hover{
+        background-color: blue;
+    }
+
+
+
+.section3  p:hover{
+    
+    font-weight: 500;
+}
+
+
+.CV button{
+    padding:10px;
+    margin-top:10px;
+}
+
+
+
+
+
+
+
+.section4{
+
+
+display: flex;
+justify-content: space-around;
+
+
+}
+
+.section4 img{
+    width:350px;
+    height: 400px;
+    border: 1px solid black;
+    padding: 25px;
+    border-radius: 30px;
+}
+
+.section5{
+    padding: 15px;
+}
+
+.section5 div {
+    padding: 20px;
+    margin-bottom: 25px;
+    border: 1px solid black;
+    width: 800px;
+}
+
+
+
+.section5 textarea{
+
+   resize:none;
+}
+
+.section5 button{
+    padding: 15px;
+    box-shadow: 3px 3px 3px 3px black;
+    border-radius: 8px;
+    
+}
+
+
+@media (max-width:600px)
+{
+    nav{
+        width:1250px;
+    }
+
+    nav a{
+        position: relative;
+        right: 20px;
+    }
+
+    .section{
+        flex-direction: column;
+    }
+
+    .self .name{
+        font-size: 35px;
+    }
+    .self h3{
+        width:300px;
+    }
+
+    .self h3{
+        font-size: 2pc;
+        width:500px;
+    }
+    .self p{
+        width: 650px;
+        font-size: 28px;
+    }
+
+    .section img{
+
+    width:1000px;
+    margin-top:30px;
+
+
+    }
+
+
+.section2 {
+    
+    width:1200px;
+    flex-direction: column;
+    margin:1pc;
+    border-radius: 20px;
+    
+}
+
+.section2 p{
+font-size:25px;
+text-align: justify;
+
+}
+
+.section3{
+   display:flex;
+   flex-direction:column;
+   width:1200px;
+    margin:1pc;
+    padding:15px;
+    border-radius: 20px;
+}
+
+.section3 p{
+font-size: 25px;
+  text-align: justify;  
+}
+
+.section4{
+    flex-direction: column;
+    padding:8pc;
+}
+.section4 img{
+
+    width:900px;
+    height: 900px;
+    margin-top:50px;
+
+}
+
+
+.footer1 div{
+
+border-radius: 30px;
+width:1000px;
+margin-top:10px;
+}
+
+}
+
+</style>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation bar</title>
+</head>
+
+<body>
+
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+        <span id="Home"></span>
+    <nav>
+  
+
+        <ul class="parent">
+            <h5>Portfolio</h5>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li> <a href="#Skills">Skills</a> </li>
+            <li><a href="#Project">Project</a></li>
+            <li><a href="#Contact">Contact</a></li>
+           
+
+
+        </ul>
+       
+
+    </nav>
+
+  
+
+    <section class="section" id="About">
+      
+
+        <div class="self">
+            <p style="font-size: 25px;font-weight: bolder;">Hello, Im </p> 
+            
+            <h1 class="name">Kathir</h1>
+
+            <h3>I'm a Front end developer</h3>
+
+            <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;">I'm eagarly waiting for an Opportunity to upgrage my knowledge</p>
+
+           
+
+            <a href="http://www.linkedin.com/in/sakthikathir97">
+                <i class="fa fa-linkedin-square" style="font-size:24px;color:black"></i></a>
+            <i class="fa fa-github" style="font-size:24px"></i>
+
+           
+
+        </div>
+        
+
+        <div>
+            <img src="https://t3.ftcdn.net/jpg/06/01/17/18/360_F_601171862_l7yZ0wujj8o2SowiKTUsfLEEx8KunYNd.jpg" alt="">
+
+        </div>
+        
+
+
+
+
+    </section>
+    <!-- hr(horizontal ruler) tag own preference and there is no end tag-->
+    <hr>   
+        <h3 id="Skills" style="text-indent: 2pc;">
+
+            <!-- horizontal ruler doesn't have close tag -->
+           
+            Skills 
+          
+        </h3>
+        <hr>
+    <section class="section2">
+
+        <div class="container1">
+            <h6>
+                <img src="img/pen.png" alt="">
+                sketching
+            </h6>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam voluptatibus non est incidunt rem
+                necessitatibus harum debitis fugit suscipit delectus aspernatur ipsa et dicta, quisquam, earum dolorem
+                numquam corrupti molestiae.
+            </p>
+        </div>
+
+
+
+
+
+
+        <div class="container2">
+
+            <h6>
+
+                <img src="img/wireframing.png" style="width:24px;height: 24px;">
+                Wireframe2
+            </h6>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam voluptatibus non est incidunt rem
+                necessitatibus harum debitis fugit suscipit delectus aspernatur ipsa et dicta, quisquam, earum dolorem
+                numquam corrupti molestiae.
+            </p>
+
+
+        </div>
+
+
+
+        <div class="container3">
+            <h6>
+                <img src="img/figma.png" alt="">  Figma
+            </h6>
+
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam voluptatibus non est incidunt rem
+                necessitatibus harum debitis fugit suscipit delectus aspernatur ipsa et dicta, quisquam, earum dolorem
+                numquam corrupti molestiae.
+            </p>
+
+
+        </div>
+
+
+    </section>
+
+
+
+  <section class="section3">
+
+
+<div class="container4">
+
+
+  <h6><img src="../new website/img/html5-balck-icon.png" alt="" srcset="">Html5</h6>
+
+  <p>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam voluptatibus non est incidunt rem
+    necessitatibus harum debitis fugit suscipit delectus aspernatur ipsa et dicta, quisquam, earum dolorem
+    numquam corrupti molestiae. </p>
+</div>
+
+
+<div class="container5">
+
+
+    <h6><img src="../new website/img/html5-balck-icon.png" alt="" srcset="">CSS3</h6>
+  
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam voluptatibus non est incidunt rem
+        necessitatibus harum debitis fugit suscipit delectus aspernatur ipsa et dicta, quisquam, earum dolorem
+        numquam corrupti molestiae. </p>
+  </div>
+  
+
+
+
+  <div class="container6">
+
+
+    <h6><img src="../new website/img/Javascript.png"  style="width:26px; height:26px;" alt="" srcset="">JS</h6>
+  
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam voluptatibus non est incidunt rem
+        necessitatibus harum debitis fugit suscipit delectus aspernatur ipsa et dicta, quisquam, earum dolorem
+        numquam corrupti molestiae.</p>
+  </div>
+  
+
+
+
+  </section>
+
+  <br>
+
+
+  <hr>
+    <h3 style="text-indent: 2pc;">Projects</h3>
+    <hr>
+
+<section class="section4" id="Project">
+      
+    <div>
+        
+        <img  src="img/Tourist_Guider_App.jpeg" alt="">
+        
+        <h5 style="position: relative;left: 40%;">Tourist </h5>
+     
+    </div>
+
+<img src="img/Car_Rental_App.jpeg" alt="">
+
+<img src="img/Food_Delivery_App.jpeg" alt="">
+
+
+</section>
+
+
+<footer class="footer1" >
+    <hr>
+    
+<h3 id="Contact">Contact</h3>
+    <hr>
+   <h6>Get in Touch with me via send me an email</h6>
+<section class="section5">
+
+<div>
+<h5>Details</h5>
+<br> 
+<form action="">
+
+       <p>Name</p>
+       <input type="text" class="input1">
+       <br><br>
+       <p>Email</p>
+       <input type="email" class="input2" required>
+       <br><br>
+       <p>Message</p>
+       <textarea name="textarea1" id="textarea1" rows="4" cols="50" placeholder="Here enter your request">
+
+       </textarea>
+    <br><br>
+       <button value="submit">Submit</button>
+    
+    </form>
+</div>
+
+</section>
+
+
+</footer>
+
+
+</body>
+
+</html>
